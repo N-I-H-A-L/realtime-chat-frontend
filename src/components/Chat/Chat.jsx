@@ -10,7 +10,7 @@ import TextContainer from '../TextContainer/TextContainer.jsx';
 import './Chat.css';
 
 //URL of server
-const ENDPOINT = 'https://realtime-chat-server-delta.vercel.app/';
+const ENDPOINT = 'https://realtime-chat-server-git-main-n-i-h-a-l.vercel.app/';
 
 let socket;
 
