@@ -11,7 +11,6 @@ import './Chat.css';
 
 //URL of server
 const ENDPOINT = 'https://realtime-chat-server-8v1e.onrender.com/';
-// const ENDPOINT = 'http://localhost:5000/';
 
 let socket;
 
@@ -65,7 +64,7 @@ const Chat = () => {
       socket.emit('sendMessage', message, () => setMessage(''));
     }
   }
-  console.log(roomData);
+  console.log(messages);
   return (
     <div className='outerContainer'>
       <div className="container">
