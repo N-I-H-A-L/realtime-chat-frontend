@@ -10,7 +10,8 @@ import TextContainer from '../TextContainer/TextContainer.jsx';
 import './Chat.css';
 
 //URL of server
-const ENDPOINT = 'https://realtime-chat-server-git-main-n-i-h-a-l.vercel.app/';
+const ENDPOINT = 'https://realtime-chat-server-8v1e.onrender.com/';
+// const ENDPOINT = 'http://localhost:5000/';
 
 let socket;
 
