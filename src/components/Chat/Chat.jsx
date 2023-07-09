@@ -63,6 +63,7 @@ const Chat = () => {
     if(message) {
       socket.emit('sendMessage', message, () => setMessage(''));
     }
+    setMessage('');
   }
   console.log(messages);
   return (
