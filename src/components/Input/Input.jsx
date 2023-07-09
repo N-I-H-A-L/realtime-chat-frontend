@@ -7,7 +7,13 @@ const Input = ({ message, setMessage, sendMessage }) => {
       <input className='input' type='text' placeholder='Type a message...'
         value={message}
         onChange={(e)=>{setMessage(e.target.value)}}
-        onKeyUp={(e)=>e.key=='Enter'?sendMessage(e):null}/>
+        // onKeyUp={(e)=>e.key=='Enter'?{e.preventDefault(); sendMessage(e);}:null}
+        onKeyUpCapture={(e) => {
+          if(e.key==='Enter'){
+            e.preventDefault();
+            sendMessage(e);
+          }
+        }}/>
       <button className='sendButton' onClick={(e)=>sendMessage(e)}>Send</button>
     </form>
   );
